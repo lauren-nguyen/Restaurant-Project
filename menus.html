@@ -2,8 +2,43 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel ="stylesheet" href ="styles.css">
+<!-- <link rel ="stylesheet" href ="styles.css"> -->
 <title>College Registration</title>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+</script>
+
+<style media="screen">
+    .MainBody{
+      border: 1px solid red;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow: auto;
+      /* display: flex; */
+    }
+    #M-items {
+      color: black;
+    }
+</style>
+
+<script type="text/javascript">
+
+    $(function () {
+
+//put into a switch statement
+    $("ol").hide();
+    $(".menuBtn").on("click", function() {
+        $(".Menu").slideDown(600);
+    });
+    $("#menuBtn").on("click", function(){
+        $("#Menu").slideUp(500);
+    });
+  });
+</script>
+
 </head>
 
 <div class = "content">
@@ -15,20 +50,73 @@
 <li id = "last"><a href="contactpage.html" style="text-decoration: none">Contact Us</a></li>
 </ul>
 </div>
-<p class = "p1">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-</p>
+    <div class = "MainBody">
+      <button type="button" name="appetizers" class="menuBtn"><em>Appetizers</em></button>
+        <ol class="Menu">
+          <li id="M-items"><strong>Naska Nan Wa Paneer-</strong> Our Kurdish bread comes with a special blend of feta cheese,
+            pure olive oil, herbs, garlic, served with fresh cucumber, tomato and olives.</li>
+          <li id="M-items"><strong>Nareen-</strong> Our Kurdish bread topped with feta cheese and served with homemade
+            spicy red sauce.</li>
+          <li id="M-items"><strong>Bajan Rashk-</strong> Deep fried eggplant covered with Jaajic, cucumber, olives and
+            tomato, served with our house made bread.</li>
+        </ol><br>
+      <button type="button" name="soups" class="menuBtn"><em>TRADITIONAL SOUPS</em></button>
+        <ol class="Menu">
+          <li id="M-items"><strong>Niskena-</strong> A smooth blend of red lentils, sweet onion, olive oil and spices.</li>
+          <li id="M-items"><strong>Dowjic-</strong> Chicken, yogurt, rice basil and lemon juice. This soup's tangy bite has a
+          traditionaly kept many Kurdish travelers from wandering too far from home.</li>
+        </ol><br>
+      <button type="button" name="salads" class="menuBtn"><em>SALADS</em></button>
+        <ol class="Menu">
+          <li id="M-items"><strong>Jaajic-</strong> Cucumber, dill and fresh garlic in a yogurt sauce.</li>
+          <li id="M-items"><strong>Tabouli-</strong> A fresh mix of couscous, chopped parsely, tomato, onion and freshly squeezed lemon juice.</li>
+          <li id="M-items"><strong>Tossed salad-</strong> Lettuce, tomatoes, feta cheese, cucumbers, and homemade vinaigrette.</li>
+          <li id="M-items"><strong>Traditional Silopi-</strong> Finely chopped cucumbers and tomatoes, onions , parsely, mixed with a housemade olive oil vinaigrette.</li>
+          <li id="M-items"><strong>Tanyata-</strong> Half tabouli and half Jaajic, just the way Tanya likes it.</li>
+        </ol><br>
+      <button type="button" name="entrees" class="menuBtn"><em>ENTREES</em></button>
+        <ol class="Menu">
+          <li id="M-items"><strong>Kubay Sawar-</strong> Crushed wheat made into a dough and filled with lean ground beef,
+            spices, onions, and then sauteed in olive oil. This dish was first made famous in Nineveh - Modern dat Mosul, Iraq.</li>
+          <li id="M-items"><strong>Kubay Brinj-</strong> Similar to Kubay Sawar, this rice "dumpling" is filled with lean ground beef, special
+            spices, olive oil and parsely, then flash fried to a cripsy brown shell.</li>
+          <li id="M-items"><strong>Biryani-</strong> A traditional rice dish, baked with peas, potatoes, raisins, vegetables, carrots
+            and a blend of Kurdish spices.</li>
+          <li id="M-items"><strong>Chicken Tawa-</strong> Chicken saudteed in lemon and other spices then baked in layers of potato, green pepper,
+            onion, and dried limes. Served with Basmati Rice.</li>
+          <li id="M-items"><strong>Sheik Babani</strong> Named after a distinguished man's striped trousers, this Kurdish delicacy is cored eggplant
+            peeled in decorative stripes and filled with spiced ground beef and vegetables. Served in a red sauce and Rice.</li>
+          <li id="M-items"><strong>Bakla-</strong> Kurdish saute of mushrooms, broccoli, zucchini and onion in olive oil with pepper and other seasonings.
+            (Chiken, Beef or Vegetarian)</li>
+          <li id="M-items"><strong>Kurdish Salad-</strong> Layer of rice, lentils, tossed salad, silopi salad, topped with feta cheese and peppery Chicken
+            breast. Served with a slice bread.</li>
+        </ol><br>
+      <button type="button" name="side orders" class="menuBtn">SIDE ORDERS</button>
+        <ol class="Menu">
+          <li id="M-items"><strong>Kurdish Bread-</strong> Two slices per order</li>
+          <li id="M-items"><strong>Small servings of:</strong> Feta cheese, red sauce, olive oil, Jaajic and olives.(Each)</li>
+        </ol><br>
+      <button type="button" name="desert" class="menuBtn"><em></em>DESERT</button>
+      <!-- check is this is ok later because its not same is OL and li  -->
+        <ol class="Menu">
+            <li id="M-items"><strong>Baklava-</strong> Rodwan's own baklava.</li>
+        </ol><br>
+      <button type="button" name="drinks" class="menuBtn">DRINKS</button>
+        <ol class="Menu">
+          <li id="M-items"><strong>Kurdish Tea-</strong> A traditional way to end every meal. This specialty tea is flavored Cardamom and Atra.
+            If you want the full Kurdish experince and affect, drink it black with loads of sugar.</li>
+          <li id="M-items"><strong>Kurdish Lemonade-</strong> Made with the whole lemon, this combines the refreshing flavor of lemon with an ice tea quality form the rind.
+            (No Caffeine)</li>
+          <li id="M-items"><strong>Kurdish Coffee-</strong>discription......</li>
+          <li id="M-items"><strong>Beverages-</strong> Coffee, iced tea, Coke, Diet Coke, Sprite, and a selection of herbal teas(Ask your waiter). </li>
+          <li id="M-items"><strong>Wine & Beer-</strong> Separate menu provided.(Ask your waiter for houe wine)</li>
+
+
+
+        </ol>
+    </div>
+
+<!-- start of footer -->
 <table>
 <tr><th>Address:</th> <th> Contact us:</th> <th> Bussiness Hours:</th></tr>
 <tr><td>32 E Fillmore Ave, </td><td> Yelp, FB, TA</td><td>Monday: 11:00 a.m. -2:30 p.m.<br> 5:00p.m. - 9:00 p.m.</td></tr>
@@ -40,5 +128,7 @@
 <tr><td> </td><td> </td><td>Sunday: Closed</td></tr>
 </tr>
 </table>
+
+
 </body>
 </html>
