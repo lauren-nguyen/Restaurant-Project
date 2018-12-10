@@ -10,7 +10,7 @@ height: 100%;
 }
 
 /* Background-color page */
-body{ 
+body{
 background: #555;
 }
 
@@ -47,7 +47,8 @@ float: left;
 display: block;
 margin-left: auto;
 margin-right: auto;
-width: 50%;
+width:100%;
+height:auto;
 float: left;
 }
 
@@ -86,7 +87,9 @@ margin: 0;
 color: white;
 table-layout:fixed;
 }
-
+th{
+    text-align: left;
+}
 table#th{
 width: 33%;
 }
@@ -95,5 +98,39 @@ table#td{
 width: 33%;
 }
 
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
 
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contactContainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width:75%;
+    box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
