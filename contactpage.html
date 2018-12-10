@@ -3,25 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <link rel ="stylesheet" href ="styles.css">
+<script src="contactpage.js"></script>
 <title>College Registration</title>
 </head>
-
+<body>
 <div class = "content">
 <div class = "navigationbar">
 <h1 id ="homepage">Babanis</h1>
+
 <li><a href="homepage.html" style="text-decoration: none">Home</a></li>
 <li><a href="about.html" style="text-decoration: none">About</a></li>
 <li><a href="menus.html" style="text-decoration: none">Menus</a></li>
 <li id = "last"><a href="contactpage.html" style="text-decoration: none">Contact Us</a></li>
-</ul>
+
 </div>
 
-<p class = "p1">
+<p class = "p1"><h2>Contact Us</h2></p>
+<div>
+<table>
+<tr><td>
+<div>
 <img src="outside_babanis.png" alt="Babani's Resturant"  class = "outsidephoto">
+</div>
+</td><td>
 <!-- Google maps -->
-<div class="mapouter"><div class="gmap_canvas"><iframe width="482" height="487" id="gmap_canvas" src="https://maps.google.com/maps?q=32%20E%20fillmore%20ave%20St.paul%20mn%2055107&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/google-maps/">pureblack.de</a></div><style>.mapouter{text-align:right;height:487px;width:482px;}.gmap_canvas {overflow:hidden;background:none!important;height:487px;width:482px;}</style></div>
+<div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="487" id="gmap_canvas" src="https://maps.google.com/maps?q=32%20E%20fillmore%20ave%20St.paul%20mn%2055107&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/google-maps/">pureblack.de</a></div><style>.mapouter{height:487px;width:482px;}.gmap_canvas {overflow:hidden;background:none!important;height:487px;width:482px;}</style></div>
+</td></tr>
 
-</p>
+</table>
+</div>
+<div class="contactContainer">
+  <form name="contactForm" id="contactForm">
+    <p class="intro">
+    Thank you for visiting Babanis. We truly appreciate your time and look forward to reading your comments. For immediate assistance, please call us directly at (651)-602-9964.
+    </p>
+    <label for="contact_reason">*Reason for contacting us</label>
+    <p class="right-column">
+    <span>
+    <input class="radio" id="contact_reason" name="contact_reason" type="radio" value="Restaurant Visit">
+    <label for="contact_reason_restaurant_visit">Restaurant Visit</label>
+    </span>
+    <span>
+    <input class="radio" id="contact_reason" name="contact_reason" type="radio" value="Questions About Products">
+    <label for="contact_reason_questions_about_products">Questions About Products</label>
+    </span>
+    <span>
+    <input class="radio" id="contact_reason" name="contact_reason" type="radio" value="Advertising/Marketing">
+    <label for="contact_reason_advertisingmarketing">Advertising/Marketing</label>
+    </span>
+    </p>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="emailAddress" name="emailAddress" placeholder="Your Email Address.." required>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+    <p class="checkbox">
+    <input id="contact_send_promo" name="contact_send_promo" type="checkbox" value="1">
+    <label for="contact_send_promo">Please keep me updated on Babanis promotions and announcements.</label>
+    </p>
+    <input type="submit" value="Submit" onclick="submitContactForm()">
+  </form>
+</div>
+<div>
 <table>
 <tr><th>Address:</th> <th> Contact us:</th> <th> Bussiness Hours:</th></tr>
 <tr><td>32 E Fillmore Ave, </td><td> Yelp, FB, TA</td><td>Monday: 11:00 a.m. -2:30 p.m.<br> 5:00p.m. - 9:00 p.m.</td></tr>
@@ -31,8 +80,7 @@
 <tr><td> </td><td> </td><td>Friday: 11:00 a.m. -2:30 p.m.<br> 5:00p.m. - 9:00 p.m.</td></tr>
 <tr><td> </td><td> </td><td>Saturday: 4:00p.m. - 9:00 p.m.</td></tr>
 <tr><td> </td><td> </td><td>Sunday: Closed</td></tr>
-</tr>
 </table>
+</div>
 </body>
-
 </html>
