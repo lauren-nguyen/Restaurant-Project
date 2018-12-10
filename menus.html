@@ -13,6 +13,7 @@
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
   </script>
+  <script type="text/javascript" src="menu.js"></script>
   <style media="screen">
   //used the class=container class instead of MainBody for the bootstrap extenstion for centering panel.
     .MainBody{
@@ -26,43 +27,101 @@
     #M-items {
       color: black;
     }
+
+    button {
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 500px;
+  display: block;
+}
+
+.menuBtn1  {
+  background-color: white;
+  color: orange;
+  border: 2px solid orange;
+}
+
+.menuBtn1:hover {
+  background-color: orange;
+  color: white;
+}
+
+.menuBtn2  {
+  background-color: white;
+  color: orange;
+  border: 2px solid orange;
+}
+
+.menuBtn2:hover {
+  background-color: orange;
+  color: white;
+}
+
+.menuBtn3  {
+  background-color: white;
+  color: orange;
+  border: 2px solid orange;
+}
+
+.menuBtn3:hover {
+  background-color: orange;
+  color: white;
+}
+
+.menuBtn4  {
+  background-color: white;
+  color: orange;
+  border: 2px solid orange;
+}
+
+.menuBtn4:hover {
+  background-color: orange;
+  color: white;
+}
+
+.menuBtn5  {
+  background-color: white;
+  color: orange;
+  border: 2px solid orange;
+}
+
+.menuBtn5:hover {
+  background-color: orange;
+  color: white;
+}
+
+.menuBtn6  {
+  background-color: white;
+  color: orange;
+  border: 2px solid orange;
+}
+
+.menuBtn6:hover {
+  background-color: orange;
+  color: white;
+}
+
+.menuBtn7  {
+  background-color: white;
+  color: orange;
+  border: 2px solid orange;
+}
+
+.menuBtn7:hover {
+  background-color: orange;
+  color: white;
+}
+
+
+
   </style>
-
-  <script type="text/javascript">
-
-        $(function () {
-
-    //put into a switch statement
-        $("ol").hide();
-        $(".menuBtn1").on("click", function() {
-            $(".Menu1").fadeToggle(900);
-        });
-
-        $(".menuBtn2").on("click", function() {
-            $(".Menu2").fadeToggle(900);
-        });
-
-        $(".menuBtn3").on("click", function() {
-            $(".Menu3").fadeToggle(900);
-        });
-
-        $(".menuBtn4").on("click", function() {
-            $(".Menu4").fadeToggle(900);
-        });
-
-        $(".menuBtn5").on("click", function() {
-            $(".Menu5").fadeToggle(900);
-        });
-
-        $(".menuBtn6").on("click", function() {
-            $(".Menu6").fadeToggle(900);
-        });
-
-        $(".menuBtn7").on("click", function() {
-            $(".Menu7").fadeToggle(900);
-        });
-      });
-  </script>
 
 </head>
 
@@ -76,6 +135,7 @@
 </ul>
 </div>
     <div class = "MainBody">
+      <!-- start of menu -->
       <h4>Discover our Menu</h4>
       <button type="button" name="apps" class="menuBtn1"><em>Appetizers</em></button>
         <ol class="Menu1">
@@ -143,6 +203,7 @@
     </div>
 
 <!-- start of footer -->
+<div>
 <table>
 <tr><th>Address:</th> <th> Contact us:</th> <th> Bussiness Hours:</th></tr>
 <tr><td>32 E Fillmore Ave, </td><td> Yelp, FB, TA</td><td>Monday: 11:00 a.m. -2:30 p.m.<br> 5:00p.m. - 9:00 p.m.</td></tr>
@@ -152,9 +213,7 @@
 <tr><td> </td><td> </td><td>Friday: 11:00 a.m. -2:30 p.m.<br> 5:00p.m. - 9:00 p.m.</td></tr>
 <tr><td> </td><td> </td><td>Saturday: 4:00p.m. - 9:00 p.m.</td></tr>
 <tr><td> </td><td> </td><td>Sunday: Closed</td></tr>
-</tr>
 </table>
-
-
+</div>
 </body>
 </html>
