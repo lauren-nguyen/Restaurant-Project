@@ -15,6 +15,8 @@ function validation() {
     }
 }
 
+
+
 function submitContactForm() {
     // Gets a reference to the form element
     var form = document.getElementById('contactForm');
