@@ -236,3 +236,16 @@ background-color: orange;
 color: white;
 }
 /* end of button modifications */
+
+/* menu page modifications */
+.MainBody{
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
+  /* display: flex; */
+}
+#M-items {
+  color: black;
+}
