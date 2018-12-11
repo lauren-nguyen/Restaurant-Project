@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 
     <title> Gallery </title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
@@ -13,8 +14,8 @@
     <link rel="stylesheet" href="css/bootstrap-theme.css" />
     <link rel="stylesheet" href="css/gallery.css" />
 	<link rel ="stylesheet" href ="styles.css">
-	
-	
+
+
 
 
     <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
@@ -26,67 +27,67 @@
                 var imgPath = 'images/square/'+ images[index].path;
                 var imgTag = getImage(imgTitle, imgPath, index);
                 $('.gallery').append('<li>'+ imgTag + '</li>');
-                
+
             }
-            
+
             $('li img').on ('mouseenter', mouseEnter);
              $('li img').on ('mouseleave', mouseLeave);
              $('li img').on ('mousemove', mouseMove);
-            
+
             function mouseEnter(e){
                $(this).addClass('gray');
                 var imgSrc = $(this).attr('src').replace('square', 'medium');
                 var imgAlt = $(this).attr('alt');
-               
+
                 var previewDiv = getDivPreview(imgSrc, imgAlt, index);
-                
+
                 previewDiv.append('<figcaption>' + images[index].title + '</figcaption>');
-               
+
                 $('body').append (previewDiv);
                 mouseMove(e);
                 $('#preview').fadeIn(1000);
-                
+
             }
-            
+
             function getDivPreview(imgSrc, imgAlt){
                 var pdiv = $('<div></div>');
                 pdiv.attr('id', 'preview');
                 pdiv.append(getImage(imgAlt,imgSrc, ));
                 return pdiv;
-                
+
             }
             function mouseLeave(e){
-               $(this).removeClass('gray'); 
+               $(this).removeClass('gray');
                 $('#preview').remove();
             }
-            
+
             function mouseMove(e){
-                
+
                 var top = e.pageY;
                 var left = e.pageX;
-                
+
                 $('#preview').css('top', (top + 10) + 'px');
                 $('#preview').css('left', (left -10) + 'px');
                }
-            
-           
+
+
         });
-       
-        
+
+
         function getImage (alt, path, index){
-                                     
-            
+
+
             var tag = '<img src=\''+ path + '\' alt=\'' + alt + '\' index=\'' + index + " '/>";
              return tag;
         }
     </script>
 
   </head>
-  
 
-  
+
+
   <body>
- 
+
  <h1> Gallery Photos</h1>
   <div class ="return">
   <a href="homepage.html" style="text-decoration: none"> << Home </a>

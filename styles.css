@@ -9,6 +9,13 @@ height: 100%;
     padding: 10px;
 }
 
+.navBar {
+  font-size: 20px;
+}
+.navBar a:hover {
+  background-color: #ffff99;
+}
+
 /* Background-color page */
 body{
 background: #555;
@@ -254,7 +261,6 @@ color: white;
 
 /* menu page modifications */
 .MainBody{
-  border: 1px solid red;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
