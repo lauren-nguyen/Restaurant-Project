@@ -235,4 +235,31 @@ font-weight: bold;
 background-color: orange;
 color: white;
 }
+
+#menuHeading {
+  display: inline-block;
+  /* border: red 1px solid; */
+  font-size: 35px;
+  font-family: 'Charmonman', cursive;
+  font-style: italic;
+  color: grey;
+}
+
+#M-items {
+  color: #ebebe0;
+  background-color: #e1e1d0;
+}
 /* end of button modifications */
+
+/* menu page modifications */
+.MainBody{
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
+  /* display: flex; */
+}
+#M-items {
+  color: black;
+}

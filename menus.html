@@ -3,140 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel ="stylesheet" href ="styles.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-theme.css" />
-    <link rel="stylesheet" href="css/gallery.css" />
 
 <title>College Registration</title>
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
   <script
     src="http://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
   </script>
   <script type="text/javascript" src="menu.js"></script>
-  <style media="screen">
-  //used the class=container class instead of MainBody for the bootstrap extenstion for centering panel.
-    .MainBody{
-      border: 1px solid red;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      overflow: auto;
-      /* display: flex; */
-    }
-    #M-items {
-      color: black;
-    }
-
-    .menuBtn1,.menuBtn2,.menuBtn3,.menuBtn4,.menuBtn5,.menuBtn6,.menuBtn7 {
-  background-color: white; /* Green */
-  border: none;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  width: 500px;
-  display: block;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.menuBtn1  {
-  background-color: white;
-  color: orange;
-  border: 2px solid orange;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.menuBtn1:hover {
-  background-color: orange;
-  color: white;
-}
-
-.menuBtn2  {
-  background-color: white;
-  color: orange;
-  border: 2px solid orange;
-  font-weight: bold;
-}
-
-.menuBtn2:hover {
-  background-color: orange;
-  color: white;
-}
-
-.menuBtn3  {
-  background-color: white;
-  color: orange;
-  border: 2px solid orange;
-  font-weight: bold;
-}
-
-.menuBtn3:hover {
-  background-color: orange;
-  color: white;
-}
-
-.menuBtn4  {
-  background-color: white;
-  color: orange;
-  border: 2px solid orange;
-  font-weight: bold;
-}
-
-.menuBtn4:hover {
-  background-color: orange;
-  color: white;
-}
-
-.menuBtn5  {
-  background-color: white;
-  color: orange;
-  border: 2px solid orange;
-  font-weight: bold;
-}
-
-.menuBtn5:hover {
-  background-color: orange;
-  color: white;
-}
-
-.menuBtn6  {
-  background-color: white;
-  color: orange;
-  border: 2px solid orange;
-  font-weight: bold;
-}
-
-.menuBtn6:hover {
-  background-color: orange;
-  color: white;
-}
-
-.menuBtn7  {
-  background-color: white;
-  color: orange;
-  border: 2px solid orange;
-  font-weight: bold;
-}
-
-.menuBtn7:hover {
-  background-color: orange;
-  color: white;
-}
-
-
-
-  </style>
-
 </head>
+
+<!-- boobooboboooboooo -->
 
 <div class = "content">
 <div class = "navigationbar">
@@ -149,8 +27,8 @@
 </div>
     <div class = "MainBody">
       <!-- start of menu -->
-      <h4>Discover our Menu</h4>
-      <button type="button" name="apps" class="menuBtn1"><em>Appetizers</em></button>
+      <h4 id="menuHeading">Discover our Menu</h4>
+      <button type="button" name="apps" class="menuBtn1"><em>Appetizers &#x21B7;</em></button>
         <ol class="Menu1">
           <li id="M-items"><strong>Naska Nan Wa Paneer-</strong> Our Kurdish bread comes with a special blend of feta cheese,
             pure olive oil, herbs, garlic, served with fresh cucumber, tomato and olives.</li>
@@ -159,13 +37,13 @@
           <li id="M-items"><strong>Bajan Rashk-</strong> Deep fried eggplant covered with Jaajic, cucumber, olives and
             tomato, served with our house made bread.</li>
         </ol><br>
-      <button type="button" name="soups" class="menuBtn2"><em>TRADITIONAL SOUPS</em></button>
+      <button type="button" name="soups" class="menuBtn2"><em>TRADITIONAL SOUPS &#x21B7;</em></button>
         <ol class="Menu2">
           <li id="M-items"><strong>Niskena-</strong> A smooth blend of red lentils, sweet onion, olive oil and spices.</li>
           <li id="M-items"><strong>Dowjic-</strong> Chicken, yogurt, rice basil and lemon juice. This soup's tangy bite has a
           traditionaly kept many Kurdish travelers from wandering too far from home.</li>
         </ol><br>
-      <button type="button" name="salads" class="menuBtn3"><em>SALADS</em></button>
+      <button type="button" name="salads" class="menuBtn3"><em>SALADS &#x21B7;</em></button>
         <ol class="Menu3">
           <li id="M-items"><strong>Jaajic-</strong> Cucumber, dill and fresh garlic in a yogurt sauce.</li>
           <li id="M-items"><strong>Tabouli-</strong> A fresh mix of couscous, chopped parsely, tomato, onion and freshly squeezed lemon juice.</li>
@@ -173,7 +51,7 @@
           <li id="M-items"><strong>Traditional Silopi-</strong> Finely chopped cucumbers and tomatoes, onions , parsely, mixed with a housemade olive oil vinaigrette.</li>
           <li id="M-items"><strong>Tanyata-</strong> Half tabouli and half Jaajic, just the way Tanya likes it.</li>
         </ol><br>
-      <button type="button" name="entrees" class="menuBtn4"><em>ENTREES</em></button>
+      <button type="button" name="entrees" class="menuBtn4"><em>ENTREES &#x21B7;</em></button>
         <ol class="Menu4">
           <li id="M-items"><strong>Kubay Sawar-</strong> Crushed wheat made into a dough and filled with lean ground beef,
             spices, onions, and then sauteed in olive oil. This dish was first made famous in Nineveh - Modern dat Mosul, Iraq.</li>
@@ -190,17 +68,17 @@
           <li id="M-items"><strong>Kurdish Salad-</strong> Layer of rice, lentils, tossed salad, silopi salad, topped with feta cheese and peppery Chicken
             breast. Served with a slice bread.</li>
         </ol><br>
-      <button type="button" name="side orders" class="menuBtn5">SIDE ORDERS</button>
+      <button type="button" name="side orders" class="menuBtn5">SIDE ORDERS &#x21B7;</button>
         <ol class="Menu5">
           <li id="M-items"><strong>Kurdish Bread-</strong> Two slices per order</li>
           <li id="M-items"><strong>Small servings of:</strong> Feta cheese, red sauce, olive oil, Jaajic and olives.(Each)</li>
         </ol><br>
-      <button type="button" name="desert" class="menuBtn6"><em></em>DESERT</button>
+      <button type="button" name="desert" class="menuBtn6"><em></em>DESERT &#x21B7;</button>
       <!-- check is this is ok later because its not same is OL and li  -->
         <ol class="Menu6">
             <li id="M-items"><strong>Baklava-</strong> Rodwan's own baklava.</li>
         </ol><br>
-      <button type="button" name="drinks" class="menuBtn7">DRINKS</button>
+      <button type="button" name="drinks" class="menuBtn7">DRINKS &#x21B7;</button>
         <ol class="Menu7">
           <li id="M-items"><strong>Kurdish Tea-</strong> A traditional way to end every meal. This specialty tea is flavored Cardamom and Atra.
             If you want the full Kurdish experince and affect, drink it black with loads of sugar.</li>
